@@ -38,8 +38,13 @@ var player = iframedoc.document.getElementById("player");
 var test = document.getElementById("test");
 var playerisplaying = player.classList.contains("playing");
 
-if (playerisplaying === true) {
-            (test.style.background = 'pink'); }
-
-else {(test.style.background = 'orange');
-    };
+test.addEventListener("click", function testing() {
+	switch(playerisplaying) {
+        case true:
+            (test.style.background = 'green');
+            break;
+        case false:
+            (test.style.background = 'pink');
+            break;
+    }
+});
