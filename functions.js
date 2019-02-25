@@ -33,17 +33,18 @@ window.addEventListener('scroll', onScroll);
 
 
 var iframe = document.getElementById("music");
+var iframedoc = iframe.contentWindow;
 var test = document.getElementById("test");
 var testClass = test.className;
 var containsplaying = test.classList.contains("scoobydoo");
 
-function testing() {
-	switch(testClass) {
-        case "scoobydoo":
-            (test.style.background = "green");
+test.addEventListener("click", function testing() {
+	switch(containsplaying) {
+        case true:
+            (test.style.background = 'green');
             break;
-        case "sco":
-            (test.style.background = "pink");
+        case false:
+            (test.style.background = 'pink');
             break;
     }
-};
+});
