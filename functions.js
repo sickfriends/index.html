@@ -38,7 +38,7 @@ var player = iframedoc.document.getElementById("player");
 var test = document.getElementById("test");
 var testClass = test.className;
 var containsplaying = test.classList.contains("scoobydoo");
-var playerisplaying = test.classList.contains("playing");
+var playerisplaying = player.classList.contains("playing");
 
 test.addEventListener("click", function testing() {
 	switch(playerisplaying) {
