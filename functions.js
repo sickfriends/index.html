@@ -39,7 +39,7 @@ var test = document.getElementById("test");
 var playerisplaying = player.classList.contains("playing");
 
 if (playerisplaying === true) {
-            (test.style.background = 'green'); }
+            (test.style.background = 'pink'); }
 
-else {(test.style.background = 'pink');
+else {(test.style.background = 'orange');
     };
