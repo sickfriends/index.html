@@ -36,14 +36,10 @@ var iframe = document.getElementById("music");
 var iframedoc = iframe.contentWindow;
 var player = iframedoc.document.getElementById("player");
 var test = document.getElementById("test");
+var playerisplaying = player.classList.contains("playing");
 
-test.addEventListener("click", function testing() {
-	switch(playerisplaying) {
-        case true:
-            (test.style.background = 'green');
-            break;
-        case false:
-            (test.style.background = 'pink');
-            break;
-    }
-});
+if (playerisplaying === true) {
+            (test.style.background = 'green'); }
+
+else {(test.style.background = 'pink');
+    };
