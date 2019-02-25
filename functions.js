@@ -38,11 +38,11 @@ var testClass = test.className;
 var containsplaying = test.classList.contains("scoobydoo");
 
 test.addEventListener("click", function testing() {
-	switch(containsplaying) {
-        case true:
+	switch(testClass) {
+        case "scoobydoo":
             (test.style.background = 'green');
             break;
-        case false:
+        case "sco":
             (test.style.background = 'pink');
             break;
     }
