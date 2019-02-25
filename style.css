@@ -95,8 +95,8 @@ b {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 100;
-    height: 100;
+    width: 100px!important;
+    height: 100px!important;
     background: #B22222;
     z-index: 100;
 }
