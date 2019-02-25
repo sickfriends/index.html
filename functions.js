@@ -41,7 +41,7 @@ var playerisplaying = player.classList.contains("playing");
 test.addEventListener("click", function testing() {
 	switch(playerisplaying) {
         case true:
-            (test.style.background = 'green');
+            (test.style.background = 'orange');
             break;
         case false:
             (test.style.background = 'pink');
