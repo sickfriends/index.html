@@ -44,7 +44,7 @@ testbox.addEventListener("click", function testingbox() {
 		case true:
 			(test.style.background = 'pink');
 			break;
-		case false;
+		case false:
 			(test.style.background = 'white');
 			break;
 	}
