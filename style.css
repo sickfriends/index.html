@@ -12,6 +12,8 @@ a, a:link, a:active, a:visited {
     color: #CCCCCC;
     font-size: 8pt;
     letter-spacing: -1px;
+    target-name: new;
+    target-new: tab;
 }
 a:hover {
     color: #FFFFFF;
@@ -80,7 +82,21 @@ h1 {
     color: #666666;
     font-weight: 300;
 }
-html, body{ height:100%; }
-body{ height:1000px; }
+html, body {
+    height: 100%;
+}
+body {
+    height: 1000px;
+}
 b {
-    font-size: 15pt;}
+    font-size: 15pt;
+}
+#test {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    z-index: 100;
+}
