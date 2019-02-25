@@ -38,9 +38,10 @@ var player = iframedoc.document.getElementById("player");
 var test = document.getElementById("test");
 var testClass = test.className;
 var containsplaying = test.classList.contains("scoobydoo");
+var playerisplaying = test.classList.contains("playing");
 
 test.addEventListener("click", function testing() {
-	switch(containsplaying) {
+	switch(playerisplaying) {
         case true:
             (test.style.background = 'green');
             break;
