@@ -3,7 +3,7 @@
 <title>sìck҉ ̕fŗi҉en͢d҉s</title></head>
 <body>
 
-<div id="test" class="hi scoobydoo">hiiii</div>
+<div id="test" class="hi scoobydoo">scooby doo</div>
 
 <center>
 <div id="title">
@@ -100,10 +100,11 @@ var iframe = document.getElementById("music");
 var iframedoc = iframe.contentWindow;
 var player = iframedoc.document.getElementById("player");
 var test = document.getElementById("test");
+var containssd = test.classList.contains("scoobydoo");
 var playerisplaying = player.classList.contains("playing");
 
 test.addEventListener("click", function testing() {
-	switch (playerisplaying) {
+	switch (containssd) {
         case true:
             (test.style.background = 'orange');
             break;
@@ -112,7 +113,6 @@ test.addEventListener("click", function testing() {
             break;
     }
 });
-
 
 </script>
   
