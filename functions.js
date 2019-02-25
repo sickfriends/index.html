@@ -36,12 +36,9 @@ var iframe = document.getElementById("music");
 var iframedoc = iframe.contentWindow;
 var player = iframedoc.document.getElementById("player");
 var test = document.getElementById("test");
-var testClass = test.className;
-var containsplaying = test.classList.contains("borg");
-var playerisplaying = player.classList.contains("playing");
 
 test.addEventListener("click", function testing() {
-	switch(containsplaying) {
+	switch(playerisplaying) {
         case true:
             (test.style.background = 'green');
             break;
