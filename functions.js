@@ -37,7 +37,7 @@ var test = document.getElementById("test");
 var testClass = test.className;
 var containsplaying = test.classList.contains("scoobydoo");
 
-test.addEventListener("click", function testing() {
+function testing() {
 	switch(testClass) {
         case "scoobydoo":
             (test.style.background = 'green');
