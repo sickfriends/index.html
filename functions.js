@@ -40,10 +40,10 @@ var containsplaying = test.classList.contains("scoobydoo");
 function testing() {
 	switch(testClass) {
         case "scoobydoo":
-            (test.style.background = 'green');
+            (test.style.background = "green");
             break;
         case "sco":
-            (test.style.background = 'pink');
+            (test.style.background = "pink");
             break;
     }
-});
+};
