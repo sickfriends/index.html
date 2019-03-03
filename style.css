@@ -18,6 +18,38 @@ a, a:link, a:active, a:visited {
 a:hover {
     color: #FFFFFF;
 }
+a.tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #666666;
+}
+a.tip span {
+  visibility: hidden;
+  width: 90px;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+a.tip span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+}
+a.tip:hover span {
+  visibility: visible;
+  opacity: 1;
+}
 #title {
     position: fixed;
     top: 30px;
@@ -65,15 +97,16 @@ a:hover {
 }
 #main {
     position: absolute;
-    top: 150%;
+    top: 170%;
     text-align: center;
 }
 #music, #dates, #links, #hide {
-    width: 25%;
+    width: 28%;
     text-align: center;
     vertical-align: middle;
-    margin-bottom: 100px;
 }
+#music, #dates {margin-bottom: 100px;}
+#links, #hide {margin-bottom: 0px !important;}
 #hide {
     height: 0px;
 }
@@ -82,21 +115,14 @@ h1 {
     color: #666666;
     font-weight: 300;
 }
-html, body {
-    height: 100%;
-}
-body {
-    height: 1000px;
-}
+html, body{ height:100%; }
 b {
     font-size: 15pt;
 }
-#test {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100px!important;
-    height: 100px!important;
-    background: green;
-    z-index: 100;
-}
+
+.secret {display: block; position: fixed; background: #222222; z-index: 200; width: 20px; height: 20px; color: #000000; border-radius: 20px; opacity: 0; transition: opacity 1s, background 0.5s;}
+.secretfade {opacity: 1;}
+.secret:hover {background: none; cursor: pointer;}
+.playa {position: fixed;}
+.hiddenX {position: fixed !important; margin: 0px; width: 40px; height: 0px; background: #000000; font-family: Courier New; padding: 14px 0px 26px 0px; text-align: center; border-radius: 25px; vertical-align: middle;}
+.hiddenX span {font-family: Andale Mono, Courier New; font-size: 7pt;}
