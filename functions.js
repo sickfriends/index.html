@@ -1,9 +1,11 @@
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
+
 var left = document.getElementById('l');
 var right = document.getElementById('r');
 var title = document.getElementById('title');
+
 var onScroll = (function(){
   var startPos;
   function run(){
@@ -17,9 +19,9 @@ var onScroll = (function(){
       startPos = 0;
       return;
     }   
-    scrollDeltaL = (fromTop - startPos) * -0.25; // left logo speed
-    scrollDeltaR = (fromTop - startPos) * 0.25; // right logo speed
-    scrollDeltaTop = (fromTop - startPos) * -0.35; // header/title speed moving up
+    scrollDeltaL = (fromTop - startPos) * -0.21; // left logo speed
+    scrollDeltaR = (fromTop - startPos) * 0.21; // right logo speed
+    scrollDeltaTop = (fromTop - startPos) * -0.35; // header / title speed moving up
     left.style.transform = `translateX(${scrollDeltaL}px)`;
     right.style.transform = `translateX(${scrollDeltaR}px)`;
     title.style.transform = `translateY(${scrollDeltaTop}px) rotate(${scrollDeltaTop}deg)`;
@@ -29,34 +31,6 @@ var onScroll = (function(){
   run();
   return run;
 })()
+
+
 window.addEventListener('scroll', onScroll);
-
-
-var iframe = document.getElementById("music");
-var iframedoc = iframe.contentWindow;
-var player = iframedoc.document.getElementById("player");
-var test = document.getElementById("test");
-var playerisplaying = player.classList.contains("playing");
-var testbox = document.getElementById("testbox");
-
-testbox.addEventListener("click", function testingbox() {
-	switch (testbox.checked) {
-		case true:
-			(test.style.background = 'pink');
-			break;
-		case false:
-			(test.style.background = 'white');
-			break;
-	}
-});
-
-test.addEventListener("click", function testing() {
-	switch(playerisplaying) {
-        case true:
-            (test.style.background = 'orange');
-            break;
-        case false:
-            (test.style.background = 'pink');
-            break;
-    }
-});
