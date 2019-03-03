@@ -5,6 +5,29 @@
 <link rel="stylesheet" type="text/css" href="/path/to/modal-video.min.css">
 <title>sìck҉ ̕fŗi҉en͢d҉s</title></head>
 
+<style>
+  
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+  
+</style>
+
 <body>
   
 <a style="z-index: 300; position: fixed; top: 10px; left: 10px;"><img id="expand" src="https://imagizer.imageshack.com/img921/2559/6wOJMU.png" style="width: 40px; height: 34px">
@@ -54,6 +77,40 @@
   
   <script>
 
+$(document).ready(function() {
+
+// Gets the video src from the data-src on each button
+
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc);
+
+  
+  
+// when the modal is opened autoplay it  
+$('#myModal').on('shown.bs.modal', function (e) {
+    
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+})
+  
+  
+// stop playing the youtube video when I close the modal
+$('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc); 
+}) 
+    
+    
+
+
+  
+  
+// document ready  
+});    
+    
 var expand = document.getElementById("expand");
 var retract = document.getElementById("retract");
 var secretlinks = document.getElementsByClassName("secret");
