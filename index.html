@@ -1,18 +1,158 @@
 <head>
+  
+<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATAAAAxAAAAG0AAABmAAAAZgAAAGYAAABmAAAAZgAAAGYAAABmAAAAZgAAAHUAAADtAAAAAAAAAAAAAAATAAAAjwAAAHoAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAACPAAAAdQAAAAAAAAATAAAAjwAAAAwAAABuAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAACPAAAADwAAAGYAAAATAAAAjwAAAAwAAAAAAAAAbgAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAACPAAAADwAAAAAAAABmAAAAxAAAAHoAAABuAAAAbgAAAK0AAAB1AAAAbgAAAG4AAABuAAAAbgAAAG4AAACSAAAADwAAAAAAAAAAAAAAZgAAAG0AAAAMAAAADAAAAAwAAAB1AAAAGAAAAAwAAAAMAAAADAAAAAwAAAAYAAAAbgAAAAAAAAAAAAAAAAAAAGYAAABmAAAAAAAAAAAAAAAAAAAAbgAAAAwAAAAAAAAAAAAAAAAAAAAAAAAADAAAAG4AAAAAAAAAAAAAAAAAAABmAAAAZgAAAAAAAAAAAAAAAAAAAG4AAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAwAAABuAAAAAAAAAAAAAAAAAAAAZgAAAGYAAAAAAAAAAAAAAAAAAABuAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAbgAAAAAAAAAAAAAAAAAAAGYAAABmAAAAAAAAAAAAAAAAAAAAbgAAAAwAAAAAAAAAAAAAAAAAAAAAAAAADAAAAG4AAAAAAAAAAAAAAAAAAABmAAAAZgAAAAAAAAAAAAAAAAAAAG4AAAAYAAAADAAAAAwAAAAMAAAADAAAABgAAAB1AAAADAAAAAwAAAAMAAAAbQAAAGYAAAAAAAAAAAAAAA8AAACSAAAAbgAAAG4AAABuAAAAbgAAAG4AAAB1AAAArQAAAG4AAABuAAAAegAAAMQAAABmAAAAAAAAAA8AAACPAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAG4AAAAAAAAADAAAAI8AAAATAAAAZgAAAA8AAACPAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAABuAAAADAAAAI8AAAATAAAAAAAAAHUAAACPAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAegAAAI8AAAATAAAAAAAAAAAAAADtAAAAdQAAAGYAAABmAAAAZgAAAGYAAABmAAAAZgAAAGYAAABmAAAAbQAAAMQAAAATAAAAAAAAAAAAAAAA4AAAAMP4AACD8AAAE+IAAAAGAAAADgAAc84AAHPOAABzzgAAc84AAHAAAABgAAAAR8gAAA/BAAAfwwAAAAcAAA==" rel="icon" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>sìck҉ ̕fŗi҉en͢d҉s</title></head>
+
 <body>
+  
+<a style="z-index: 300; position: fixed; top: 10px; left: 10px;"><img id="expand" src="https://imagizer.imageshack.com/img921/2559/6wOJMU.png" style="width: 40px; height: 34px">
+<img id="retract" src="https://imagizer.imageshack.com/img924/7146/ErRNHm.png"style="display: none; width: 40px; height: 34px"></a>
 
-<div id="test" class="hi scoobydoo">testing noartwork yet again</div>
+<a id="retract" style="display: none; z-index: 300; position: fixed; top: 10px; left: 10px; font-size: 15pt; font-family: Helvetica Neue; font-weight: 200; letter-spacing: 6px;"><img src="https://imagizer.imageshack.com/img924/7146/ErRNHm.png"style="width: 40px; height: 34px"></a>
 
+<a style="top: 40px; left: 120px;" class="secret" onclick="show('music1', 'pause1')"></a>
+<iframe id="music1" class="playa" style="z-index: 201; display: none; top: 40px; left: 40px;" width="280" height="160" src="https://www.youtube.com/embed/5ECEVojolTk?rel=1&amp;controls=1&amp;showinfo=0&amp;start=1&autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+<a id="pause1" onclick="hide('music1', 'pause1')" style="z-index: 202; display: none; top: 40px; left: 240px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+
+<a style="top: 200px; left: 80px;" class="secret" onclick="show('music2', 'pause2')"></a>
+<iframe id="music2" class="playa" style="z-index: 203; display: none; top: 200px; left: 80px;" width="280" height="160" src="https://www.youtube.com/embed/g5EpilCzZ1Y?rel=1&amp;controls=1&amp;showinfo=0&amp;start=1&autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+<a id="pause2" onclick="hide('music2', 'pause2')" style="z-index: 204; display: none; top: 200px; left: 310px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+
+<a style="top: 270px; right: 100px;" class="secret" onclick="show('music3', 'pause3')"></a>
+<iframe id="music3" class="playa" style="z-index: 205; display: none; top: 220px; right: 100px;" width="280" height="160" src="https://www.youtube.com/embed/hKfszAE5CxI?rel=1&amp;controls=1&amp;showinfo=0&amp;start=1&autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+<a id="pause3" onclick="hide('music3', 'pause3')" style="z-index: 206; display: none; top: 220px; right: 100px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+
+<a style="top: 420px; right: 300px;" class="secret" onclick="show('music4', 'pause4')"></a>
+<img id="music4" class="playa" style="z-index: 207; display: none; top: 420px; right: 200px; width: 200px; height: auto;" src="https://i.imgur.com/iFmMV3d.jpg">
+<a id="pause4" onclick="hide('music4', 'pause4')" style="z-index: 228; display: none; top: 420px; right: 170px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+
+<a style="top: 80px; right: 50px;" class="secret" onclick="show('music5', 'pause5')"></a>
+<img id="music5" class="playa" style="z-index: 209; display: none; top: 80px; right: 50px; width: 100px; height: auto;" src="https://i.imgur.com/4Frg4Kq.jpg">
+<a id="pause5" onclick="hide('music5', 'pause5')" style="z-index: 210; display: none; top: 80px; right: 20px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+
+<a style="top: 150px; left: 340px;" class="secret" onclick="show('music6', 'pause6')"></a>
+<img id="music6" class="playa" style="z-index: 211; display: none; top: 10px; left: 340px; width: 120px; height: auto;" src="https://i.imgur.com/aVh1fHN.jpg">
+<a id="pause6" onclick="hide('music6', 'pause6')" style="z-index: 212; display: none; top: 10px; left: 450px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+
+<a style="top: 120px; right: 280px;" class="secret" onclick="show('music7', 'pause7')"></a>
+<img id="music7" class="playa" style="z-index: 213; display: none; top: 10px; right: 220px; width: 200px; height: auto;" src="https://i.imgur.com/NO0sLlN.jpg">
+<a id="pause7" onclick="hide('music7', 'pause7')" style="z-index: 214; display: none; top: 30px; right: 220px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+
+<a style="top: 390px; left: 190px;" class="secret" onclick="show('music8', 'pause8')"></a>
+<iframe id="music8" class="playa" style="z-index: 215; display: none; top: 390px; left: 80px;" width="280" height="160" src="https://www.youtube.com/embed/YcDn8DFOmMc?rel=1&amp;controls=1&amp;showinfo=0&amp;start=1&autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+<a id="pause8" onclick="hide('music8', 'pause8')" style="z-index: 216; display: none; top: 390px; left: 330px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+  
+<a style="top: 480px; right: 105px;" class="secret" onclick="show('music9', 'pause9')"></a>
+<img id="music9" class="playa" style="z-index: 217; display: none; top: 400px; right: 15px; width: 180px; height: auto;" src="https://i.imgur.com/Und6ktl.png">
+<a id="pause9" onclick="hide('music9', 'pause9')" style="z-index: 218; display: none; top: 400px; right: 10px; border: none;" class="tip hiddenX">X<span>click to hide</span></a>
+  
+  <script>
+
+var expand = document.getElementById("expand");
+var retract = document.getElementById("retract");
+var secretlinks = document.getElementsByClassName("secret");
+var secretcontent = document.getElementsByClassName("playa");
+var secretX = document.getElementsByClassName("hiddenX");
+
+expand.addEventListener("click", function() {
+    for (var i = 0; i < secretlinks.length; i++) {
+    secretlinks[i].style.visibility = "visible";
+    secretlinks[i].classList.add("secretfade");
+    }
+    expand.style.display = "none";
+    retract.style.display = "block";
+});
+
+retract.addEventListener("click", function() {
+    for (var i = 0; i < secretlinks.length; i++) {
+    secretlinks[i].style.visibility = "hidden";
+    secretlinks[i].classList.remove("secretfade");
+    }
+    for (var i = 0; i < secretcontent.length; i++) {
+    secretcontent[i].style.display = "none";
+    }
+    for (var i = 0; i < secretX.length; i++) {
+    secretX[i].style.display = "none";
+    }
+    expand.style.display = "block";
+    retract.style.display = "none";
+});
+
+var tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+function onYouTubeIframeAPIReady() {
+  player1 = new YT.Player('music1', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+  player2 = new YT.Player('music2', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+  player3 = new YT.Player('music3', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+  player8 = new YT.Player('music8', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+function onPlayerReady(event) {
+  document.getElementById('pause1').addEventListener('click', function() {
+    player1.pauseVideo();
+  });
+  retract.addEventListener('click', function() {
+    player1.pauseVideo();
+  });
+  document.getElementById('pause2').addEventListener('click', function() {
+    player2.pauseVideo();
+  });
+  retract.addEventListener('click', function() {
+    player2.pauseVideo();
+  });
+  document.getElementById('pause3').addEventListener('click', function() {
+    player3.pauseVideo();
+  });
+  retract.addEventListener('click', function() {
+    player3.pauseVideo();
+  });
+  document.getElementById('pause8').addEventListener('click', function() {
+    player8.pauseVideo();
+  });
+  retract.addEventListener('click', function() {
+    player8.pauseVideo();
+  });
+}
+function show(playerID, pauseID) {
+    var player = document.getElementById(playerID);
+    var pause = document.getElementById(pauseID);
+    player.style.display = "block";
+    pause.style.display = "block";
+}
+function hide(playerID, pauseID) {
+    var player = document.getElementById(playerID);
+    var pause = document.getElementById(pauseID);
+    player.style.display = "none";
+    pause.style.display = "none";
+}
+</script>
+  
 <center>
 <div id="title">
-
-<img src="https://imagizer.imageshack.com/img924/7066/fZkqPz.gif">
+<img src="https://imagizer.imageshack.com/img921/2122/ypGffF.gif" id="sickfriendslogo">
 </div>
 </center>
 <div id="footer">
-<a href="https://www.facebook.com/SickFriendsMusic" target="_blank"><img src="https://imagizer.imageshack.com/img924/7084/qwwkEz.png" style="margin-right: -5px;"></a><a href="http://www.fossilmuseum.net/Fossil_Galleries/TrilobitesMorocco/Walliserops_trifurcatus/Walliserops_trifurcatus.htm" target="_blank"><img src="https://imagizer.imageshack.com/img922/3021/abbtiZ.png"></a><a href="https://burgess-shale.rom.on.ca/en/fossil-gallery/view-species.php?id=93&m=7" target="_blank"><img src="https://imagizer.imageshack.com/img924/2751/k9aiuF.png"></a>
+<a href="https://www.facebook.com/SickFriendsMusic" target="_blank"><img src="https://imagizer.imageshack.com/img924/7084/qwwkEz.png" style="margin-right: -5px;"></a><a href="https://www.instagram.com/ssickfriendss/" target="_blank"><img src="https://imagizer.imageshack.com/img922/3021/abbtiZ.png"></a><a href="https://open.spotify.com/artist/2oWDQrglAlDdQN4pRlS1Jo" target="_blank"><img src="https://imagizer.imageshack.com/img924/2751/k9aiuF.png"></a>
 </div>
 <div id="header">
 <div class="logo" id="left">
@@ -24,29 +164,41 @@
 <center>
 <div id="box">
 <div id="music">
-<h1>Music</h1>
-<iframe id="music" style="border: 0; width: 100%; height: 472px;" src="playlist.html" seamless><a href="http://sick-friends.bandcamp.com/album/sick-friends-vol-1">sick friends vol. 1 by Sick Friends</a></iframe>
+  <center><img src="https://imagizer.imageshack.com/img924/264/mc27Ao.png" style="width: 159px; height: 50px;"></center><br><br>
+
+click download to donate via bandcamp<br>
+all proceeds go to <a href="https://firrp.org/" target="_blank">FIRRP</a><br><br><br>
+  
+<iframe style="border: 0; width: 100%; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=817791732/size=large/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/" seamless><a href="http://sick-friends.bandcamp.com/album/sick-friends-vol-1">sick friends vol. 1 by Sick Friends</a></iframe>
 </div>
 
 <div id="dates">
-<h1>Performance Dates</h1>
-
-<b>03/11/2019</b> alberta st pub<br>
-<b>mm/dd/yyyy</b> text texttext<br>
-<b>mm/dd/yyyy</b> text text text text
+  <center><img src="https://imagizer.imageshack.com/img921/1425/PlB3t2.png" style="width: 160px; height: 50px;"></center><br><br>
+  <b>03/01/2019</b> rtuern of the HOL // <a href="https://www.facebook.com/events/663801774077527/" target="_blank">info</a><br>
+  <b>03/11/2019</b> alberta st pub // <a href="https://www.facebook.com/events/331692264137135/" target="_blank">info</a><br>
 
 </div>
 
 <div id="links">
-<h1>Links</h1>
+  <center><img src="https://imagizer.imageshack.com/img921/3228/6QVBQl.png" style="width: 109px; height: 40px;"></center><br><br>
 
-links to everyone's individual pages<br>
-here is a <a href="/">link</a><br>
-here's another <a href="/">link</a><br>
-<a href="/">link</a><br>
-<a href="/">link</a><br>
-<a href="/">link</a><br>
-
+woofy (<a target="_blank" href="https://woofy.bandcamp.com/" class="tip">x<span>bandcamp</span></a>)(<a target="_blank" href="https://www.facebook.com/woooooofy/" class="tip">x<span>facebook</span></a>)(<a target="_blank" href="https://soundcloud.com/woooooooofy" class="tip">x<span>soundcloud</span></a>)(<a target="_blank" href="https://www.instagram.com/woooooofy/" class="tip">x<span>instagram</span></a>)<br>
+elihu knowles (<a target="_blank" href="https://www.instagram.com/suschords" class="tip">x<span>instagram</span></a>)(<a target="_blank" href="https://soundcloud.com/elihuknowles" class="tip">x<span>soundcloud</span></a>)<br>
+david "motocross" david (<a target="_blank" href="https://www.facebook.com/davidmotocrossdavid/" class="tip">x<span>facebook</span></a>)(<a target="_blank" href="https://www.instagram.com/davidmotocrossdavid/" class="tip">x<span>instagram</span></a>)(<a target="_blank" href="https://soundcloud.com/davidmotocrossdavid" class="tip">x<span>soundcloud</span></a>)<br>
+arch ares (<a target="_blank" href="https://www.instagram.com/arch_ares" class="tip">x<span>instagram</span></a>)(<a target="_blank" href="mailto:bookarchares@gmail.com" class="tip">x<span>email</span></a>)<br>
+jo atto (<a target="_blank" href="https://soundcloud.com/joatto" class="tip">x<span>soundcloud</span></a>)(<a target="_blank" href="https://joatto.bandcamp.com/releases" class="tip">x<span>bandcamp</span></a>)<br>
+xochitl (<a target="_blank" href="https://www.instagram.com/chichibleu" class="tip">x<span>instagram</span></a>)<br>
+second seasons (<a target="_blank" href="http://secondseasons.net/" class="tip">x<span>website</span></a>)(<a target="_blank" href="https://www.instagram.com/second.seasons" class="tip">x<span>instagram</span></a>)<br>
+alley science (<a target="_blank" href="https://soundcloud.com/nikhil-wadhwa-8" class="tip">x<span>soundcloud</span></a>)(<a target="_blank" href="https://www.instagram.com/alleyscience" class="tip">x<span>instagram</span></a>)<br>
+buddy boy (<a target="_blank" href="https://open.spotify.com/track/5GTWvzUzgFidjIvVE9IyQd?si=1px7glGRQlKT09sFDCsu9Q" class="tip">x<span>spotify</span></a>)(<a target="_blank" href="https://www.facebook.com/buddyyboy/" class="tip">x<span>facebook</span></a>)<br>
+qt<br>
+cristobal (<a target="_blank" href="https://soundcloud.com/juan-flores-65" class="tip">x<span>soundcloud</span></a>)(<a target="_blank" href="https://soundcloud.com/goldplatedvision" class="tip">x<span>collective soundcloud</span></a>)<br>
+ouija digital (<a target="_blank" href="https://soundcloud.com/user-29582883" class="tip">x<span>soundcloud</span></a>)<br>
+alex franklin (<a target="_blank" href="https://waterflyspigot.bandcamp.com/" class="tip">x<span>bandcamp</span></a>)(<a target="_blank" href="https://soundcloud.com/alex-franklin-37" class="tip">x<span>soundcloud</span></a>)(<a target="_blank" href="https://soundcloud.com/waterfly-spigot" class="tip">x<span>other soundcloud</span></a>)<br>
+a.b. (<a target="_blank" href="https://soundcloud.com/abmamo" class="tip">x<span>soundcloud</span></a>)<br>
+vulpey (<a target="_blank" href="https://open.spotify.com/artist/6PaS2xqD0ZDpRnsmdT1Jaj" class="tip">x<span>spotify</span></a>)(<a target="_blank" href="http://facebook.com/vulpeyofficial" class="tip">x<span>facebook</span></a>)(<a target="_blank" href="http://youtube.com/vulpeyofficial" class="tip">x<span>youtube</span></a>)(<a target="_blank" href="https://soundcloud.com/vulpey" class="tip">x<span>soundcloud</span></a>)<br>
+sam go / toy drones (<a target="_blank" href="https://open.spotify.com/album/5Hz05iQoqLf8VsiWZC8Oqy" class="tip">x<span>spotify</span></a>)(<a target="_blank" href="https://soundcloud.com/samuel-m-griffin-ortiz" class="tip">x<span>soundcloud</span></a>)  
+  
 </div>
 
 <div id="hide" style="visibility: hidden;">
@@ -57,62 +209,19 @@ posuere cubilia Curae; Pellentesque venenatis maximus varius.
   maybe has to do with keeping the section width the way it is but
   yeah don't get rid of it)
 </div>
+
 </div>
 </center>
 </div>
-  
-<script>
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
-var left = document.getElementById('l');
-var right = document.getElementById('r');
-var title = document.getElementById('title');
-var onScroll = (function(){
-  var startPos;
-  function run(){
-    var fromTop = window.pageYOffset, 
-        rect = left.getBoundingClientRect(),
-        scrollDelta;
-    // check if element is in viewport
-    if( (rect.top - window.innerHeight) <= 0 && rect.bottom > 0 )
-       startPos = startPos === undefined ? fromTop : startPos;
-    else{
-      startPos = 0;
-      return;
-    }   
-    scrollDeltaL = (fromTop - startPos) * -0.25; // left logo speed
-    scrollDeltaR = (fromTop - startPos) * 0.25; // right logo speed
-    scrollDeltaTop = (fromTop - startPos) * -0.35; // header/title speed moving up
-    left.style.transform = `translateX(${scrollDeltaL}px)`;
-    right.style.transform = `translateX(${scrollDeltaR}px)`;
-    title.style.transform = `translateY(${scrollDeltaTop}px) rotate(${scrollDeltaTop}deg)`;
-    console.clear();
-    console.log(scrollDelta);
-  }
-  run();
-  return run;
-})()
-window.addEventListener('scroll', onScroll);
 
-
-var iframe = document.getElementById("music");
-var player = iframe.contentWindow.document.getElementById("player");
-var test = document.getElementById("test");
-var containssd = test.classList.contains("scoobydoo");
-var playerisplaying = player.classList.contains("noartwork");
-
-test.addEventListener("click", function testing() {
-	switch (playerisplaying) {
-        case true:
-            (test.style.background = 'pink');
-            break;
-        case false:
-            (test.style.background = 'orange');
-            break;
-    }
-});
-
-</script>
-  
 </body>
+
+<script src="functions.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( "#sickfriendslogo" ).click(function() {
+  $( "#sickfriendslogo" ).effect( "shake" );
+});
+</script>
